@@ -1,0 +1,75 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.preloader{
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    opacity: 0;
+    display: none;
+    
+}
+main{
+   
+
+}
+h1{
+    font-size: 5vw;
+    opacity: 0;
+}
+.velo-animation{
+    display: flex;
+    flex-direction: row;
+}
+.bike-ani{
+    height: 65vh;
+    width: 50vw;
+    position: relative;
+    left: 7%;
+}
+.wind-line-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.wind-line-1,.wind-line-2,.wind-line-3,.wind-line-4{
+    position: relative;
+    height: 5px;
+    width: 20vw;
+    background-color: black;
+    border-radius: 30%;
+}
+.wind-line-1{
+    left: -150%;
+    transform-origin: center right;
+    opacity: 1;
+}
+
+.wind-line-2{
+    left: -250%;
+    transform-origin: center right;
+    opacity: 1;
+}
+.wind-line-3{
+    left: -70%;
+    transform-origin: center right;
+    opacity: 1;
+}
+.wind-line-4{
+    left: -120%;
+    transform-origin: center right;
+    opacity: 1;
+}
