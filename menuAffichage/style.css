@@ -1,0 +1,43 @@
+body,html{
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+}
+.menu-affichage{
+    height: 65vh;
+    width: 65vw;
+    background-color: #1E1E1E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+}
+.menu-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    font-size: 4em;
+    margin: 0;
+}
+.number-menu{
+    font-size: 2em;
+}
+hr{
+    margin: 0;
+    height: 3px;
+    background-color: white;
+}

@@ -40,8 +40,8 @@ h1{
     flex-direction: row;
 }
 .bike-ani{
-    height: 60vh;
-    width: 50vw;
+   /* height: 60vh;*/
+   /* width: 50vw;*/
     position: relative;
     left: 7%;
 }

@@ -3,24 +3,63 @@
 
 
 window.addEventListener("DOMContentLoaded",()=>{
-    const menu = document.querySelector(".content-overlay");
+    let screenWidth = Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth
+      );
+    let screenHeight =  Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+      );
+
+   const menu = document.querySelector(".content-overlay");
     gsap.set(menu,{opacity:0});
+   
+   let squareContainer = document.getElementById("square-container");
+     
+   // calcul combien de cells besoin selon ecran
+  let squareSize = 100;
+ 
+   let numCols = Math.ceil(screenWidth/squareSize)
+   let numRows = Math.ceil(screenHeight/squareSize)
 
-    const squareContainer = document.getElementById("square-container");
+   let numSquares = numCols * numRows;
 
-    // calcul combien de cells besoin selon ecran
-    const squareSize = 100;
-    const screenWidth = window.innerWidth
-    const screenHeight = window.innerHeight
-    const numCols = Math.ceil(screenWidth/squareSize)
-    const numRows = Math.ceil(screenHeight/squareSize)
+   squareContainer.style.width = `${numCols * squareSize}px`
+   squareContainer.style.height = `${numRows * squareSize}px`
 
-    const numSquares = numCols * numRows;
+   let squares = [];
 
-    squareContainer.style.width = `${numCols * squareSize}px`
-    squareContainer.style.height = `${numRows * squareSize}px`
-
-    let squares = [];
+    window.addEventListener("resize",()=>{
+   
+        screenWidth = Math.max(
+           document.body.scrollWidth,
+           document.documentElement.scrollWidth
+         );
+        screenHeight =  Math.max(
+           document.body.scrollHeight,
+           document.documentElement.scrollHeight
+         );
+         console.log(`height:${screenHeight},width:${screenWidth}`)
+        
+     
+         squareContainer = document.getElementById("square-container");
+     
+         // calcul combien de cells besoin selon ecran
+        
+       
+          numCols = Math.ceil(screenWidth/squareSize)
+          numRows = Math.ceil(screenHeight/squareSize)
+     
+          numSquares = numCols * numRows;
+     
+         squareContainer.style.width = `${numCols * squareSize}px`
+         squareContainer.style.height = `${numRows * squareSize}px`
+     
+        squares = [];
+    })
+ 
+ 
 
     function createSquares(){
         for (let i=0; i< numSquares; i++){
