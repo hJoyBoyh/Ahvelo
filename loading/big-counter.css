@@ -17,6 +17,7 @@
 	top: 10%;
 	right: 40%;
 	
+	
 
 	height: 5rem;
 	width: 5rem;
@@ -35,7 +36,7 @@
 	content: attr(data-progress-text);
 	font-family: "Helvetica Neue", sans-serif;
 	font-weight: 100;
-	font-size: 5rem;
+	font-size: 10vw;
 	line-height: 1;
 	text-align: right;
 	color: black;
