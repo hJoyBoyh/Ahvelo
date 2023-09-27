@@ -35,6 +35,9 @@ h1{
     font-size: 5vw;
     opacity: 0;
 }
+.number-loading{
+   
+}
 .velo-animation{
     display: flex;
     flex-direction: row;

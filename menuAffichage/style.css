@@ -1,12 +1,14 @@
 body,html{
     padding:0;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 101vh;
+    width: 101vw;
+    overflow: hidden;
+
 }
 #container{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,9 +37,35 @@ h2{
 }
 .number-menu{
     font-size: 2em;
+    opacity: 1;
+    color: #575454;
 }
 hr{
     margin: 0;
     height: 3px;
     background-color: white;
+    transform-origin: center left;
+}
+.selection{
+    opacity: 1;
+}
+.selection:hover{
+    color:#E51E1C;
+}
+
+button{
+    height: 10vh;
+    width: 10vw;
+    color: white;
+    background-color: #575454;
+    border: 1px solid white;
+}
+button:hover{
+    color: #1E1E1E;
+}
+
+@media screen and (max-width:600px) {
+    h2{
+        font-size: 2em;
+    }
 }

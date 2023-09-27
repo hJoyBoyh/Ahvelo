@@ -6,16 +6,18 @@ paceOptions = {
 Pace.on('done', () =>{
     let pre = document.querySelector(".preloader")
     let tl = gsap.timeline();
+    let numberLoading = document.querySelector(".number-loading")
+   
 
     tl.to(".bike-ani",{
-        duration:2,
-        x:"-30%",
+        duration:0.5,
+        x:"-15%",
         ease: Back.easeOut.config(1.7)
         
     })
     tl.add("start")
     tl.to(".bike-ani",{
-        duration:1.5,
+        duration:1,
         x:"150%",
         opacity:0
         

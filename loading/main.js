@@ -3,6 +3,8 @@ let windTwo = document.querySelector(".wind-line-2")
 let windThree = document.querySelector(".wind-line-3")
 let windFour = document.querySelector(".wind-line-4")
 
+
+
 let tl = gsap.timeline()
 
 tl.from(lineAnimation,{
