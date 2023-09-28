@@ -18,6 +18,7 @@ body,html{
     justify-content: center;
     align-items: center;
 }
+
 .container{
     opacity: 0;
     display: none;
@@ -25,16 +26,13 @@ body,html{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
 }
-main{
-   
 
-}
 h1{
     font-size: 5vw;
     opacity: 0;
 }
+
 .number-loading{
    
 }
@@ -46,12 +44,14 @@ h1{
    /* height: 60vh;*/
    /* width: 50vw;*/
     position: relative;
-    left: 7%;
+    left: 15%;
 }
 .wind-line-container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: relative;
+    left: 15%;
 }
 .wind-line-1,.wind-line-2,.wind-line-3,.wind-line-4{
     position: relative;

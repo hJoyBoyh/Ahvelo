@@ -13,6 +13,7 @@ header{
     height: auto;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 #toggle{
     position: relative;
@@ -20,5 +21,5 @@ header{
     justify-content: center;
     align-items: center;
    
-    right: 5%;
+    right: 3%;
 }
