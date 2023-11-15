@@ -1,25 +1,31 @@
-body,html{
+*{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    box-sizing: border-box;
+    
+    
 }
 .logo{
-    width:15vw;
-    height:20vh;
+    height: 115px;
 }
 header{
     width: 100vw;
-    height: auto;
+    margin-bottom: 10em;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+   
 }
 #toggle{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    cursor: pointer;
     right: 3%;
 }
+
+@media screen and (max-width: 500px) {
+    .logo {
+      height: 80px;
+    }
+  }

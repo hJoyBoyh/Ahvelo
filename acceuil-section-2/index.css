@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-2{
+    padding: 10px;
+}
+.title-mission{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+h2{
+font-weight: 400;
+font-size: 2em;
+}
+.middle-container{
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+
+.card{
+    width: 13em;
+    height: 18em;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 6px 2px 2px rgb(66, 66, 66);
+    margin-bottom: 4em;
+}
+
+.red-line{
+    margin-bottom: 13px;
+    border: none;
+    height: 2.5px;
+    color: red; 
+    background-color: red;
+    width: 72%;
+
+}
+.card-description{
+    text-align: left;
+}
+.bike-gauche{
+    width: 460px;
+    height: 370px;
+    align-self: center;
+    position: relative;
+    bottom: 4em;
+}
+@media screen and (max-width: 500px) {
+    .middle-container{
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .container-card{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        
+    }
+    .card{
+        width: 13em;
+        height: 18em;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 6px 2px 2px rgb(66, 66, 66);
+        margin-bottom: 4em;
+    }
+    .bike-gauche{
+        width: 270px;
+        height: 180px;
+        align-self: center;
+        position: relative;
+        bottom: 4em;
+    }
+
+  }
