@@ -6,7 +6,8 @@
 .titre {
     display: flex;
     justify-content: center;
-
+    font-weight: 400;
+    font-size: 2em;
 }
 
 .services {
@@ -52,54 +53,57 @@
 
 .services-button {
     border-radius: 48px;
-    padding: 7px;
     display: inline-block;
-  padding: .75rem 1.25rem;
-  color: #fff; /* */
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .10rem;
-  transition: all .3s;
+    padding: 7px;
+  background-color: #fff;
+  transition: all .3s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border: none;
 }
-    .services-button::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* */
-    border-radius: 48px;
-    z-index: -2;
-  }
 
-    .services-button::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: darken(#fff, 15%); /* */
-    transition: all .3s;
-    border-radius: 48px;
-    z-index: -1;
-  }
+.services-button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #f99c9c; /* A CHANGER POUR LA COULEUR DE TRANSITION */
+  transition: all .3s ease;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.services-button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10rem;
+  z-index: -2;
+}
 
-  .services-button:hover {
-    color: #fff; /* */
-  }
+.services-button:hover {
+  color: #fff;
+  cursor: pointer;
+}
 
+.services-button:hover:before {
+  width: 100%;
+}
 .services-button p {
-    color: #000;
+color: #000;
 text-align: center;
 font-family: Inter;
-font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+text-transform: uppercase;
+font-size: 1rem;
+letter-spacing: .10rem;
 }
 
