@@ -4,19 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil-Section-1</title>
+  
 </head>
 <body>
-    <div id="container">
-        <div class="accueil-section-1">
-            <div>
-                <h1>Bienvenue</h1>
-                <hr>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tenetur assumenda iusto! Praesentium mollitia aliquam odio iure cupiditate autem beatae rerum, dolor eius corporis est magni saepe, id fugit aperiam?
-                In labore aliquam expedita neque, nihil inventore similique reiciendis modi velit laudantium impedit sapiente, libero facere alias? Officia placeat ad animi, dolore ullam nobis, repudiandae est nostrum laboriosam eligendi non?</p>
-            </div>
-            <img src="/img/bikeholderimg.png" alt="" srcset="">
-        </div>
-    </div>
     
+    <header>
+        <h1>A simple three.js app</h1>
+      </header>
+    <main>
+        <div id="container3D"></div>
+    </main>
+    <!--<script type="module" src="main.js"></script>-->
 </body>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/FBXLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/MTLLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/OBJLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/libs/fflate.min.js"></script>
+<script>
+    let scene , camera, renderer;
+function init(){
+scene = new THREE.Scene();
+
+
+//create a new camera with positions and angles
+camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1300);
+
+renderer = new THREE.WebGLRenderer({alpha:true})
+
+camera.position.z =800;
+camera.position.x = 0
+camera.position.y = 500
+
+
+hemisphereLight = new THREE.HemisphereLight(0xffffff,0x444444,1.0)
+hemisphereLight.position.set(0,1,0);
+scene.add(hemisphereLight)
+
+
+light = new THREE.DirectionalLight(0xffffff,1.0)
+light.position.set(0,1,0);
+scene.add(light)
+
+
+
+renderer.setSize(window.innerWidth,window.innerHeight)
+document.querySelector("#container3D").appendChild(renderer.domElement);
+
+
+let controls = new THREE.OrbitControls(camera,renderer.domElement) 
+
+controls.addEventListener('change',renderer)
+
+
+const fbxLoader= new THREE.FBXLoader();
+
+fbxLoader.load('models/eye/bicycleFbx.fbx',(object)=>{
+scene.add(object)
+animate()
+})
+
+
+
+
+
+}
+function animate(){
+renderer.render(scene,camera)
+requestAnimationFrame(animate)
+
+
+}
+init()
+
+</script>
+
 </html>
