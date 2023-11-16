@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/*navigation*/
+
+.logo{
+    height: 115px;
+}
+header{
+    width: 100vw;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#toggle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 3%;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+      height: 80px;
+    }
+  }
+
+  /*section-1*/
+  
+.section-1{
+    height: 70vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.accueil{
+    height: 60vh;
+    width: 100vw;
+
+    margin-right: 1%;
+    margin-left: 1%;
+
+    display: flex;
+    justify-content: center;
+
+    /*separation des deux element accueil info et bicycle container*/
+    gap:14%
+}
+.accueil-info{
+    
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 50vw;
+    margin-left: 1%;
+}
+.accueil-info>div{
+    margin-bottom: 5%;
+}
+.accueil-info>div>h1{
+    margin: 0;
+    font-size: 3em;
+}
+.accueil-info>p{
+    font-size: 1.2em;
+}
+.ligne-bienvenue{
+    height: 2px;
+    width: 200px;
+    background-color: #E41E1D;
+}
+.bicycle-container{
+    width: 400px;
+    height: 300px;
+    margin-right: 1%;
+}
+.bicycle-img{
+    height: 100%;
+    width: 100%;
+
+}
+.scroll-circle{
+    height:55px;
+    width: 40px;
+
+   
+    border: 2px solid red;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #E41E1D;
+}
+.scroll-container>p{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+}
+/*preloader*/
+
+.preloader{
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    opacity: 0;
+    display: none;
+    min-width: 100vw;
+   min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-loading{
+    font-size: 5vw;
+    opacity: 0;
+}
+
+
+.velo-animation{
+    display: flex;
+    flex-direction: row;
+}
+.bike-ani{
+   /* height: 60vh;*/
+   /* width: 50vw;*/
+    position: relative;
+    top:12%;
+    left: 15%;
+}
+.wind-line-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 15%;
+}
+.wind-line-1,.wind-line-2,.wind-line-3,.wind-line-4{
+    position: relative;
+    height: 5px;
+    width: 20vw;
+    background-color: black;
+    border-radius: 30%;
+}
+.wind-line-1{
+    left: -150%;
+    transform-origin: center right;
+    opacity: 1;
+}
+
+.wind-line-2{
+    left: -250%;
+    transform-origin: center right;
+    opacity: 1;
+}
+.wind-line-3{
+    left: -70%;
+    transform-origin: center right;
+    opacity: 1;
+}
+.wind-line-4{
+    left: -120%;
+    transform-origin: center right;
+    opacity: 1;
+}

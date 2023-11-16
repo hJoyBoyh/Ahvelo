@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.logo{
+    height: 115px;
+}
+header{
+    width: 100vw;
+    margin-bottom: 10em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#toggle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 3%;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+      height: 80px;
+    }
+  }
