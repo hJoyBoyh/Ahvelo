@@ -12,9 +12,9 @@
     
    
 }
-h2{
+h3{
 font-weight: 400;
-font-size: 2em;
+font-size: 5em;
 }
 .middle-container{
     display: flex;
@@ -26,14 +26,15 @@ font-size: 2em;
 
 
 .card{
-    width: 13em;
-    height: 18em;
+    width: 40vw;
+    height: 50vh;
     border: 1px solid black;
     padding: 5px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 6px 2px 2px rgb(66, 66, 66);
-    margin-bottom: 4em;
+    margin-bottom: 20%;
+    margin-top: 40%;
 }
 
 .red-line{
@@ -47,13 +48,14 @@ font-size: 2em;
 }
 .card-description{
     text-align: left;
+    font-size: 3em;
 }
 .bike-gauche{
     width: 460px;
     height: 370px;
     align-self: center;
     position: relative;
-    bottom: 4em;
+    bottom: 70em;
 }
 @media screen and (max-width: 600px) {
     .middle-container{
