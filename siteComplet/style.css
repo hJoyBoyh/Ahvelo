@@ -5,6 +5,9 @@
     
     
 }
+body,html{
+    overflow-x: hidden;
+}
 /*navigation*/
 
 .logo{
@@ -312,8 +315,9 @@ header{
     z-index: 10001;
     display: none;
     position: fixed;
-    top: 30%;
+    top: 20%;
     left: 25%;
+    
     color: #fff;
     height: 50vh;
     width: 50vw;
@@ -328,7 +332,7 @@ header{
 
 .close-menu{
     position: relative;
-   bottom:58%;
+   bottom:20%;
     left:75%;
     
  }
@@ -458,10 +462,340 @@ header{
 /*section 2 titre*/
 .section-2-titre{
    padding-top: 20%;
+   padding-bottom: 20%;/*change le value pour plus petit*/
    text-align: center;
    width: 100vw;
    height: 30vh;
    opacity: 1;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
  
+/*section 2 content*/
+
+
+.middle-container{
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+
+.card{
+    width: 40vw;
+    height: 70vh;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 6px 2px 2px rgb(66, 66, 66);
+    margin-bottom: 20%;
+    margin-top: 30%;
+}
+
+.red-line{
+    margin-bottom: 13px;
+    border: none;
+    height: 2.5px;
+    color: red; 
+    background-color: red;
+    width: 72%;
+
+}
+.card-description{
+    text-align: left;
+    font-size: 1em;
+}
+.bike-gauche{
+    width: 460px;
+    height: 370px;
+    align-self: center;
+    position: relative;
+   top: 10em;
+}
+
+/*section 3 titre*/
+.section-3-titre{
+    padding-top: 20%;
+    padding-bottom: 20%;/*change le value pour plus petit*/
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+    opacity: 1;
+    font-size: 1.5em;
+    font-weight: 300;
+ }
+/*section 3*/
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    padding: 15px;
+    border-radius: 30px;
+    background: rgba(229, 30, 28, 0.93);
+}
+
+.services-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services-item-header h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.services-item p {
+    color: #fff;
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 1.1rem;
+}
+
+.services-item-header img {
+    width: 51px;
+    height: 51px;
+    flex-shrink: 0;
+}
+
+.services-button{
+  border-radius: 48px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  color: #000;
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .10rem;
+
+}
+.services-button:hover {
+  cursor: pointer;
+}
+/*section 4 titre*/
+.section-4-titre{
+    padding-top: 20%;
+    padding-bottom: 10%;/*change le value pour plus petit*/
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+    opacity: 1;
+ }
+ /*section 4*/
+ 
+.footer-container{
+    background-color: #1E1F1F;
+    color: white;
+}
+.h2-joindre{
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.5em;
+    font-weight: 300;
+}
+#map-container {
+    width: 650px; /* Set your desired width */
+    height: 500px; /* Set your desired height */
+    border: 2px solid #ccc; /* Set a border color */
+    border-radius: 8px; /* Set border radius for a rounded appearance */
+    overflow: hidden; /* Hide any content that might overflow the container */
+  }
+  
+  /* Style the iframe itself */
+  #map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove the default iframe border */
+  }
+  .upper-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .adresse-etc{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-right: 6em;
+    margin-left: 1.5em;
+  }
+  .infos{
+    font-size: 22px;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .infos:first-child{
+    height: 4em;
+  }
+  .lower-footer{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  .footer-logo{
+    width: 400px;
+    margin-left: 4em;
+    margin-right: 3em;
+  }
+  .ul-nav-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 12em;
+    height: 15em;
+  }
+  .ul-nav-footer li{
+    list-style: none;
+   
+  }
+  .ul-nav-footer li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+   
+  }
+  .copyright{
+    background-color: #1E1F1F;
+    color: white;
+    font-size: large;
+    font-weight: 200;
+   position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: white solid 3px;
+    
+      
+}
+.droit{
+    margin-left: 2em;
+}
+.confection{
+    margin-right: 2em;
+}
+.confection span{
+    color: red;
+}
+
+  @media screen and (max-width: 580px) {
+    #map-container{
+        width: 250px; /* Set your desired width */
+        height: 250px;
+    }
+    .h2-joindre{
+        font-size: 1.3em;
+    }
+    .upper-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .footer-logo{
+        width: 200px;
+        margin-left: 1em;
+        margin-right: 2em;
+      }
+      .ul-nav-footer li a{
+        font-size: 20px;
+      }
+      .infos{
+        font-size: 18px;
+        height: 2.5em;
+      }
+      .adresse-etc{
+        height: 12em;
+      }
+      
+      .lower-footer{
+        margin-top: 1em;
+        padding: 8px;
+      }
+      .h2-joindre{
+        margin-bottom: 2.5em;
+      }
+      .confection{
+        margin-right: 0;
+    }
+      
+    
+  }
+  @media screen and (max-width: 650px) {
+    #map-container{
+      width: 500px; /* Set your desired width */
+      height: 350px;
+  }
+  .ul-nav-footer li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+   
+  }
+  .ul-nav-footer{
+    margin-right: 2em;
+  }
+  .footer-logo{
+    width: 200px;
+    margin-left: 3em;
+    margin-right: 4em;
+    
+  }
+  @media screen and (max-width: 500px) {
+    #map-container{
+      width: 375px; /* Set your desired width */
+      height: 200px;
+  }
+  .h2-joindre{
+    margin-bottom: 1.5em;
+}
+  .footer-logo{
+    width: 200px;
+    margin-left: 1em;
+    margin-right: 2em;
+    
+  }
+  .copyright{
+    font-size: 14px;
+  }
+  .droit{
+    margin-left: 1em;
+}
+.confection{
+  margin-left: 1.5em;
+    margin-right: 1em;
+}
+  }
+}

@@ -62,18 +62,18 @@
     margin-left: 4em;
     margin-right: 3em;
   }
-  ul{
+  .ul-nav-footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-right: 12em;
     height: 15em;
   }
-  ul li{
+  .ul-nav-footer li{
     list-style: none;
    
   }
-  ul li a{
+  .ul-nav-footer li a{
     color: white;
     text-decoration: none;
     font-size: 22px;
@@ -123,7 +123,7 @@
         margin-left: 1em;
         margin-right: 2em;
       }
-      ul li a{
+      .ul-nav-footer li a{
         font-size: 20px;
       }
       .infos{
@@ -152,13 +152,13 @@
       width: 500px; /* Set your desired width */
       height: 350px;
   }
-  ul li a{
+  .ul-nav-footer li a{
     color: white;
     text-decoration: none;
     font-size: large;
    
   }
-  ul{
+  .ul-nav-footer{
     margin-right: 2em;
   }
   .footer-logo{
