@@ -69,6 +69,8 @@ header{
     height: 100%;
     width: 50vw;
     margin-left: 1%;
+    /*gsap*/
+    opacity:1
 }
 .accueil-info>div{
     margin-bottom: 5%;
@@ -89,6 +91,8 @@ header{
     width: 400px;
     height: 300px;
     margin-right: 1%;
+    /*gsap*/
+    opacity: 1;
 }
 .bicycle-img{
     height: 100%;
@@ -369,6 +373,13 @@ header{
      font-size: 4em;
      margin: 0;
  }
+ h2>a{
+    text-decoration: none;
+    color: white;
+ }
+ h2>a:link {
+    color:white;
+ }
  .number-menu{
      font-size: 2em;
      opacity: 1;
@@ -382,8 +393,9 @@ header{
  }
  .selection{
      opacity: 1;
+     cursor: pointer;
  }
- .selection:hover{
+ .selection>a:hover{
      /*color:#E51E1C;*/
      color: #1E1E1E;
  }
