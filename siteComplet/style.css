@@ -18,6 +18,7 @@ header{
     margin-bottom: 2em;
     display: flex;
     justify-content: space-between;
+    position: fixed;
    
 }
 #toggle{
@@ -45,6 +46,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10%;
 }
 .accueil{
     height: 60vh;
@@ -57,7 +59,7 @@ header{
     justify-content: center;
 
     /*separation des deux element accueil info et bicycle container*/
-    gap:14%
+    gap:0%
 }
 .accueil-info{
     
@@ -295,7 +297,8 @@ header{
 
 .menu-open{
    
-    background-color:#231F20;
+   /* background-color:#231F20;*/
+   background-color: rgba(229, 30, 28, 1);;
     border-radius:100px;
 
     position:fixed;
@@ -309,7 +312,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1E1E1E;
+    /*background-color: #1E1E1E;*/
+    background-color: rgba(229, 30, 28, 0.93);;
 }
 .content-overlay{
     z-index: 10001;
@@ -346,7 +350,8 @@ header{
  .menu-affichage{
      height: 65vh;
      width: 65vw;
-     background-color: #1E1E1E;
+    /* background-color: #1E1E1E;*/
+    background-color: rgba(229, 30, 28, 0.93);;
      color: white;
      display: flex;
      flex-direction: column;
@@ -379,7 +384,8 @@ header{
      opacity: 1;
  }
  .selection:hover{
-     color:#E51E1C;
+     /*color:#E51E1C;*/
+     color: #1E1E1E;
  }
  
  button{
