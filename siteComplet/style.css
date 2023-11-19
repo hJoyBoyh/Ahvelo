@@ -49,7 +49,7 @@ header{
     padding-top: 15%;
 }
 .accueil{
-    height: 60vh;
+    height: 100vh;
     width: 100vw;
 
     margin-right: 1%;
@@ -57,23 +57,25 @@ header{
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
     /*separation des deux element accueil info et bicycle container*/
     gap:0%
 }
 .accueil-info{
-    
+    text-align: center;
     display: flex;
     flex-direction: column;
-    
+    z-index: 1;
     height: 100%;
-    width: 50vw;
+    width: 100%;
     margin-left: 1%;
+    position: relative;
     /*gsap*/
     opacity:1
 }
 .accueil-info>div{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .accueil-info>div>h1{
     margin: 0;
@@ -82,17 +84,54 @@ header{
 .accueil-info>p{
     font-size: 1.2em;
 }
-.ligne-bienvenue{
+
+/* .ligne-bienvenue{
     height: 2px;
     width: 200px;
     background-color: #E41E1D;
+} */
+.bike-container {
+    width: 400px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
 }
-.bicycle-container{
+.pump-container {
+    width: 400px;
+    height: 300px;
+    top: 0px;
+    right: 0px;
+}
+.tool-container {
+    width: 400px;
+    height: 300px;
+    bottom: 0px;
+    left: 0px;
+}
+.helmet-container {
+    width: 200px;
+    height: 100px;
+    bottom: 0px;
+    margin: 0 auto;
+}
+.wheel-container {
+    width: 500px;
+    height: 250px;
+    bottom: 0px;
+    right: 0px;
+}
+.bike-img,
+.pump-img,
+.tool-img,
+.helmet-img,
+.wheel-img {
+  width: 100%;
+  height: 100%;
+}
+/* .bicycle-container{
     width: 500px;
     height: 400px;
     margin-right: 1%;
-    position: relative;
-    bottom: 50px;
     /*gsap*/
     
 }
@@ -100,7 +139,7 @@ header{
     height: 100%;
     width: 100%;
 
-}
+} */
 .scroll-circle{
     height:55px;
     width: 40px;
@@ -557,6 +596,8 @@ header{
 .section-2-titre{
    padding-top: 20%;
    padding-bottom: 20%;/*change le value pour plus petit*/
+   padding-left: 5%;
+   padding-right: 5%;
    text-align: center;
    width: 100vw;
    height: 30vh;
@@ -573,6 +614,8 @@ header{
     .section-2-titre{
         padding-top: 20%;
         padding-bottom: 20%;/*change le value pour plus petit*/
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: center;
         width: 100vw;
         height: 30vh;
@@ -617,9 +660,13 @@ header{
     width: 72%;
 
 }
+h3 {
+    font-size: 1.9em;
+}
 .card-description{
+    margin-left: 5px;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.4em;
 }
 .bike-gauche{
     width: 460px;
@@ -682,8 +729,8 @@ header{
 }
 /*section 3 titre*/
 .section-3-titre{
-    padding-top: 20%;
-    padding-bottom: 20%;/*change le value pour plus petit*/
+    padding-top: 15%;
+    padding-bottom: 15%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
     height: 30vh;
@@ -708,7 +755,6 @@ header{
     padding: 15px;
     border-radius: 30px;
     background: rgba(229, 30, 28, 0.93);
-    opacity: 1;
 }
 
 .services-item-header {
@@ -721,6 +767,7 @@ header{
     color: #fff;
     font-weight: 500;
     font-size: 2em;
+    text-align: center;
 }
 
 .services-item p {
@@ -734,12 +781,12 @@ header{
     width: 51px;
     height: 51px;
     flex-shrink: 0;
+    margin-right: 10px;
 }
 
 .services-button{
   border-radius: 48px;
   display: inline-block;
-  padding: 10px;
   background-color: #fff;
   transition: all .3s ease;
   position: relative;
@@ -749,6 +796,7 @@ header{
   color: #000;
   border: none;
   width: 100%;
+  height: 50px;
   text-align: center;
   font-family: Inter;
   font-style: normal;
@@ -759,6 +807,7 @@ header{
   letter-spacing: .10rem;
 
 }
+
 .services-button:hover {
   cursor: pointer;
 }
@@ -822,7 +871,7 @@ header{
 
 /*section 4 titre*/
 .section-4-titre{
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 10%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
@@ -1000,6 +1049,12 @@ header{
       width: 375px; /* Set your desired width */
       height: 200px;
   }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}
   .h2-joindre{
     margin-bottom: 1.5em;
 }
