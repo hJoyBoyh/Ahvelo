@@ -48,6 +48,10 @@ section1Animtation.to(".accueil-info",1,{
     opacity:0,
     x:-500
 },("start"))
+section1Animtation.to(".scroll-container",1,{
+    opacity:0,
+    x:-500
+},("start"))
 
 ScrollTrigger.create({
     trigger:".section-1",
