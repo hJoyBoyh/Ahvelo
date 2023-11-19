@@ -177,22 +177,22 @@ section2ContentAnimation.to(".bike-gauche",1,{
 
 section2ContentAnimation.from(".card-1",1,{
     
-    xPercent:1000,
+    xPercent:1500,
     
 },("start"))
 section2ContentAnimation.from(".card-2",1,{
     
-    xPercent:1000
+    xPercent:1500
 },("start"))
 section2ContentAnimation.from(".card-3",1,{
     
-    xPercent:1000
+    xPercent:1500
 },("start"))
 
 
 ScrollTrigger.create({
     trigger:".middle-container",
-    start: "20% 45%",
+    start: "10% 45%",
     end: "250% 80%",
    
     toggleActions:"play none none reverse",
@@ -202,6 +202,7 @@ ScrollTrigger.create({
    
     animation:section2ContentAnimation,
 })
+
     }
   }
   

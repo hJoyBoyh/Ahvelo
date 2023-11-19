@@ -46,7 +46,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 .accueil{
     height: 60vh;
@@ -88,9 +88,11 @@ header{
     background-color: #E41E1D;
 }
 .bicycle-container{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     margin-right: 1%;
+    position: relative;
+    bottom: 50px;
     /*gsap*/
     
 }
@@ -473,13 +475,24 @@ header{
  button:hover{
      color: #1E1E1E;
  }
- /*
-@media screen and (max-width:600px) {
-    h2{
-        font-size: 2em;
+ 
+@media screen and (max-width:800px) {
+    h2>a{
+        font-size: 1em;
+    }
+    .selection{
+        text-align: right;
     }
     
+    .content-overlay{
+        width: 70vw;
+        left:15%
+    }
+    .close-menu{
+        bottom:30%
+    }
 }
+/*
 @media screen and (max-width:1500px) {
     .close-menu{
         position: fixed;
@@ -534,7 +547,7 @@ header{
 @media screen and (max-width:400px) {
     .close-menu{
         position: relative;
-       bottom:50%;
+        bottom:30%;
         left:-50%;
         
      }
@@ -624,8 +637,8 @@ header{
         height: auto;
         position: relative;
         /*left:-150%;*/
-        right: 200%;
-        gap:1%
+        right: 400%;
+        gap:5%
     }
     .middle-container {
         display: flex;
@@ -637,7 +650,7 @@ header{
        
     }
     .card {
-        width: 40vw;
+        width: 70vw;
         height: 40vh;
         border: 1px solid black;
         padding: 5px;
@@ -695,6 +708,7 @@ header{
     padding: 15px;
     border-radius: 30px;
     background: rgba(229, 30, 28, 0.93);
+    opacity: 1;
 }
 
 .services-item-header {
@@ -750,6 +764,61 @@ header{
 }
 
 /*section 3 responsive*/
+@media screen and (max-width:800px) {
+    .services {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:5%
+    }
+    .services-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70vw;
+        height: 400px;
+        flex-shrink: 0;
+        padding: 15px;
+        border-radius: 30px;
+        background: rgba(229, 30, 28, 0.93);
+    }
+    .services-item-header{
+        gap:5%
+    }
+    .services-item-header h2 {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .services-button{
+        border-radius: 48px;
+        display: inline-block;
+        padding: 10px;
+        background-color: #fff;
+        transition: all .3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      
+        color: #000;
+        border: none;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .10rem;
+      
+      }
+
+}
 
 /*section 4 titre*/
 .section-4-titre{
