@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+   
+
 gsap.registerPlugin(ScrollTrigger)
 
 // circle animation
@@ -11,7 +14,8 @@ tlAnimation.to(".circle",{
 
 // page animation
 //section 1 on the scroll
-
+//section 1 ce trouve dans le preloader
+/*
 let section1Animtation = gsap.timeline()
 section1Animtation.add("start")
 
@@ -26,15 +30,18 @@ section1Animtation.to(".accueil-info",1,{
 
 ScrollTrigger.create({
     trigger:".section-1",
-    start: "45% 40%",
+    start: "55% 30%",
+    end: "100% 10%",
    
-    toggleActions:"play none none reverse",
+   // toggleActions:"play none none reverse",
     markers:true,
     scrub:true,
    
     animation:section1Animtation,
 })
+*/
 
+/*
 
 //section 2
 let section2TitreAnimation = gsap.timeline()
@@ -49,7 +56,7 @@ ScrollTrigger.create({
     start: "25% 80%",
    
     toggleActions:"play none none reverse",
-    markers:true,
+    markers:false,
     scrub:true,
    
     animation:section2TitreAnimation,
@@ -69,7 +76,7 @@ ScrollTrigger.create({
     end: "90% 80%",
    
     toggleActions:"play none none reverse",
-    markers:true,
+    markers:false,
     pin: ".bike-gauche",
     scrub:true,
    
@@ -88,7 +95,7 @@ ScrollTrigger.create({
     start: "5% 95%",
    
     toggleActions:"play none none reverse",
-    markers:true,
+    markers:false,
     scrub:true,
    
     animation:section3TitreAnimation,
@@ -108,8 +115,11 @@ ScrollTrigger.create({
     start: "30% 85%",
    
     toggleActions:"play none none reverse",
-    markers:true,
+    markers:false,
     
    
     animation:section3Animation,
 })
+
+*/
+});
