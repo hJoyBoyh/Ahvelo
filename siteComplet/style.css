@@ -39,7 +39,7 @@ header{
   /*section-1*/
   
 .section-1{
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
 
     display: flex;
@@ -159,6 +159,69 @@ header{
     }
   }
   */
+
+  /*
+  section-1 responsive
+  */
+  @media screen and (max-width: 800px){
+    .section-1{
+        height: 90vh;
+        width: 100vw;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15%;
+    }
+    .accueil{
+        height:90vh;
+        width: 100vw;
+    
+        margin-right: 1%;
+        margin-left: 1%;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    
+        /*separation des deux element accueil info et bicycle container*/
+        gap:0%
+    }
+    .accueil-info{
+    
+        display: flex;
+        flex-direction: column;
+        
+        height: 100%;
+        width: 80vw;
+        margin-left: 1%;
+        margin-top: 10%;
+        /*gsap*/
+        opacity:1
+    }
+    .accueil-info>div{
+        margin-bottom: 5%;
+    }
+    .accueil-info>div>h1{
+        margin: 0;
+        font-size: 2em;
+    }
+    .bicycle-container{
+        width: 200px;
+        height: 100px;
+        margin-right: 1%;
+        /*gsap*/
+        
+    }
+    .bicycle-img{
+        height: 100%;
+        width: 100%;
+    
+    }
+  }
+
 
 /*preloader*/
 
@@ -488,6 +551,24 @@ header{
     font-size: 1.5em;
     font-weight: 300;
 }
+/*section responsive */
+@media screen and (max-width:800px) {
+    h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+    .section-2-titre{
+        padding-top: 20%;
+        padding-bottom: 20%;/*change le value pour plus petit*/
+        text-align: center;
+        width: 100vw;
+        height: 30vh;
+        opacity: 1;
+         font-size: 1.5em;
+         
+     }
+    
+}
 
  
 /*section 2 content*/
@@ -535,6 +616,57 @@ header{
    top: 10em;
 }
 
+@media screen and (max-width:800px) {
+    .container-card{
+        display: flex;
+        width: 1000vw;
+        justify-content: flex-start;
+        height: auto;
+        position: relative;
+        /*left:-150%;*/
+        right: 200%;
+        gap:1%
+    }
+    .middle-container {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+       
+    }
+    .card {
+        width: 40vw;
+        height: 40vh;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 6px 2px 2px rgb(66, 66, 66);
+        margin-bottom: 0%;
+        margin-top: 0%;
+        /*gsap */
+        opacity: 1;
+    }
+    .container-img{
+        width: 100vw;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-img>img{
+        height: 100%;
+        width: 200px;
+    }
+    .bike-gauche{
+        width: 460px;
+        height: 370px;
+        align-self: center;
+        position: relative;
+       top: 1em;
+    }
+}
 /*section 3 titre*/
 .section-3-titre{
     padding-top: 20%;
@@ -616,6 +748,9 @@ header{
 .services-button:hover {
   cursor: pointer;
 }
+
+/*section 3 responsive*/
+
 /*section 4 titre*/
 .section-4-titre{
     padding-top: 20%;

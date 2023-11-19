@@ -72,6 +72,7 @@ section2TitreAnimation.from(".section-2-titre",1,{
 ScrollTrigger.create({
     trigger:".section-2-titre",
     start: "25% 80%",
+    end : "bottom 70%",
    
     toggleActions:"play none none reverse",
     markers:false,
@@ -139,6 +140,74 @@ ScrollTrigger.create({
     animation:section3Animation,
 })
 
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        let section1Animtation = gsap.timeline()
+        section1Animtation.add("start")
+        
+        document.querySelector(".bicycle-container").style.display = "none"
+        section1Animtation.to(".bicycle-container",1,{
+            opacity:0,
+            x:500
+        },("start"))
+        section1Animtation.to(".accueil-info",1,{
+            opacity:0,
+            x:-500
+        },("start"))
+        
+        ScrollTrigger.create({
+            trigger:".section-1",
+            start: "31% 30%",
+            end: "100% 10%",
+           
+           // toggleActions:"play none none reverse",
+            markers:true,
+            scrub:true,
+           
+            animation:section1Animtation,
+        })
+
+        //section 2 responsive
+        let section2ContentAnimation = gsap.timeline()
+        section2ContentAnimation.add("start")
+section2ContentAnimation.to(".bike-gauche",1,{
+    
+    rotationY:"360deg"
+},("start"))
+
+section2ContentAnimation.from(".card-1",1,{
+    
+    xPercent:1000,
+    
+},("start"))
+section2ContentAnimation.from(".card-2",1,{
+    
+    xPercent:1000
+},("start"))
+section2ContentAnimation.from(".card-3",1,{
+    
+    xPercent:1000
+},("start"))
+
+
+ScrollTrigger.create({
+    trigger:".middle-container",
+    start: "20% 45%",
+    end: "250% 80%",
+   
+    toggleActions:"play none none reverse",
+    markers:true,
+    pin: ".section-2",
+    scrub:true,
+   
+    animation:section2ContentAnimation,
+})
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 800px)")
+  myFunction(x) // Call listener function at run time
+  
 
 }
 
