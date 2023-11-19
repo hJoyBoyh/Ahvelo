@@ -677,8 +677,8 @@ h3 {
 }
 /*section 3 titre*/
 .section-3-titre{
-    padding-top: 20%;
-    padding-bottom: 20%;/*change le value pour plus petit*/
+    padding-top: 15%;
+    padding-bottom: 15%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
     height: 30vh;
@@ -765,7 +765,7 @@ h3 {
 
 /*section 4 titre*/
 .section-4-titre{
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 10%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
