@@ -101,6 +101,7 @@ header{
     width: 200px;
     background-color: #E41E1D;
 }
+
 .bicycle-container{
     width: 400px;
     height: 300px;
@@ -581,6 +582,8 @@ header{
 .section-2-titre{
    padding-top: 20%;
    padding-bottom: 20%;/*change le value pour plus petit*/
+      padding-left: 5%;
+   padding-right: 5%;
    text-align: center;
    width: 100vw;
    height: 30vh;
@@ -597,6 +600,8 @@ header{
     .section-2-titre{
         padding-top: 20%;
         padding-bottom: 20%;/*change le value pour plus petit*/
+           padding-left: 5%;
+        padding-right: 5%;
         text-align: center;
         width: 100vw;
         height: 30vh;
@@ -654,8 +659,10 @@ header{
 
 }
 .card-description{
+    margin-left: 5px;
     text-align: left;
-    font-size: 1em;
+    text-align: left;
+    font-size: 1.4em;
 }
 .bike-gauche{
     width: 460px;
@@ -718,8 +725,8 @@ header{
 }
 /*section 3 titre*/
 .section-3-titre{
-    padding-top: 20%;
-    padding-bottom: 20%;/*change le value pour plus petit*/
+    padding-top: 15%;
+    padding-bottom: 15%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
     height: 30vh;
@@ -745,11 +752,13 @@ header{
     border-radius: 30px;
     background: rgba(229, 30, 28, 0.93);
     opacity: 1;
+    margin: 50px;
 }
 
 .services-item-header {
     display: flex;
     align-items: center;
+        margin-right: 10px;
     justify-content: space-evenly;
 }
 
@@ -757,6 +766,7 @@ header{
     color: #fff;
     font-weight: 500;
     font-size: 2em;
+        text-align: center;
 }
 
 .services-item p {
@@ -784,6 +794,7 @@ header{
 
   color: #000;
   border: none;
+    height: 50px;
   width: 100%;
   text-align: center;
   font-family: Inter;
@@ -858,7 +869,7 @@ header{
 
 /*section 4 titre*/
 .section-4-titre{
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 10%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
@@ -974,6 +985,12 @@ header{
         width: 250px; /* Set your desired width */
         height: 250px;
     }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}
     .h2-joindre{
         font-size: 1.3em;
     }
