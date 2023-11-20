@@ -588,7 +588,7 @@ header{
 @media screen and (max-width:550px) {
     .close-menu{
         position: relative;
-       bottom:50%;
+       bottom:35%;
         left:20%;
         
      }
@@ -597,7 +597,7 @@ header{
 @media screen and (max-width:400px) {
     .close-menu{
         position: relative;
-        bottom:30%;
+        bottom:5%;
         left:-50%;
         
      }
