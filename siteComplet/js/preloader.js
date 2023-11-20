@@ -106,7 +106,7 @@ ScrollTrigger.create({
     end: "90% 80%",
    
     toggleActions:"play none none reverse",
-    markers:false,
+    markers:true,
     pin: ".bike-gauche",
     scrub:true,
    

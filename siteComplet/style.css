@@ -632,7 +632,8 @@ header{
 
 
 .card{
-    width: 40vw;
+   /* width: 30vw;*/
+   width: 400px;
     height: 70vh;
     border: 1px solid black;
     padding: 5px;
@@ -718,16 +719,20 @@ header{
 }
 /*section 3 titre*/
 .section-3-titre{
-    padding-top: 20%;
-    padding-bottom: 20%;/*change le value pour plus petit*/
+    margin-top: 20%;
+    padding-bottom: 15%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
-    height: 30vh;
+    height: 10vh;
     opacity: 1;
     font-size: 1.5em;
     font-weight: 300;
  }
 /*section 3*/
+.section-3{
+    height: 80vh;
+    width: 100vw;
+}
 
 .services {
     display: flex;
@@ -751,12 +756,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap:5%
 }
 
 .services-item-header h2 {
     color: #fff;
     font-weight: 500;
     font-size: 2em;
+    text-align: center;
 }
 
 .services-item p {
@@ -859,7 +866,7 @@ header{
 /*section 4 titre*/
 .section-4-titre{
     padding-top: 20%;
-    padding-bottom: 10%;/*change le value pour plus petit*/
+    padding-bottom: 20%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
     height: 30vh;
