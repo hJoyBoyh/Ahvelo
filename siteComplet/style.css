@@ -101,6 +101,7 @@ header{
     width: 200px;
     background-color: #E41E1D;
 }
+
 .bicycle-container{
     width: 400px;
     height: 300px;
@@ -581,6 +582,8 @@ header{
 .section-2-titre{
    padding-top: 20%;
    padding-bottom: 20%;/*change le value pour plus petit*/
+   padding-left: 5%;
+   padding-right: 5%;
    text-align: center;
    width: 100vw;
    height: 30vh;
@@ -597,6 +600,8 @@ header{
     .section-2-titre{
         padding-top: 20%;
         padding-bottom: 20%;/*change le value pour plus petit*/
+           padding-left: 5%;
+        padding-right: 5%;
         text-align: center;
         width: 100vw;
         height: 30vh;
@@ -655,8 +660,10 @@ header{
 
 }
 .card-description{
+    margin-left: 5px;
     text-align: left;
-    font-size: 1em;
+    text-align: left;
+    font-size: 1.4em;
 }
 .bike-gauche{
     width: 460px;
@@ -750,11 +757,13 @@ header{
     border-radius: 30px;
     background: rgba(229, 30, 28, 0.93);
     opacity: 1;
+    margin: 50px;
 }
 
 .services-item-header {
     display: flex;
     align-items: center;
+        margin-right: 10px;
     justify-content: space-evenly;
     gap:5%
 }
@@ -763,7 +772,6 @@ header{
     color: #fff;
     font-weight: 500;
     font-size: 2em;
-    text-align: center;
 }
 
 .services-item p {
@@ -791,6 +799,7 @@ header{
 
   color: #000;
   border: none;
+    height: 50px;
   width: 100%;
   text-align: center;
   font-family: Inter;
@@ -866,7 +875,7 @@ header{
 /*section 4 titre*/
 .section-4-titre{
     padding-top: 20%;
-    padding-bottom: 20%;/*change le value pour plus petit*/
+    padding-bottom: 10%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
     height: 30vh;
@@ -939,6 +948,7 @@ header{
     justify-content: space-between;
     margin-right: 12em;
     height: 15em;
+    margin-bottom: 10px;
   }
   .ul-nav-footer li{
     list-style: none;
@@ -980,6 +990,9 @@ header{
     #map-container{
         width: 250px; /* Set your desired width */
         height: 250px;
+    }
+    .circle-background-2 {
+        display: none;
     }
     .h2-joindre{
         font-size: 1.3em;
@@ -1044,7 +1057,8 @@ header{
       height: 200px;
   }
   .h2-joindre{
-    margin-bottom: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
   .footer-logo{
     width: 200px;
@@ -1052,6 +1066,11 @@ header{
     margin-right: 2em;
     
   }
+    .adresse-etc{
+        line-height: 1.2em;
+        height: 12em;
+      }
+
   .copyright{
     font-size: 14px;
   }
