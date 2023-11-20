@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+        font-family: Roboto;
     
 }
 body,html{
@@ -678,6 +678,11 @@ header{
      }
    
 }
+
+.section-2 {
+    padding-bottom: 15%;
+}
+
 /*section 2 titre*/
 .section-2-titre{
    padding-top: 20%;
@@ -696,6 +701,7 @@ header{
     h2 {
         font-size: 2em;
         margin: 0;
+        margin-top: 15%;
     }
     .section-2-titre{
         padding-top: 20%;
@@ -764,6 +770,7 @@ header{
     text-align: left;
     text-align: left;
     font-size: 1.4em;
+    font-family: Roboto;
 }
 .bike-gauche{
     width: 460px;
@@ -865,18 +872,16 @@ header{
 }
 /*section 3 titre*/
 .section-3-titre{
-    padding-top: 20%;
-    padding-bottom: 20%;/*change le value pour plus petit*/
+    padding-top: 15%;
     text-align: center;
     width: 100vw;
-    height: 10vh;
     opacity: 1;
     font-size: 1.5em;
     font-weight: 300;
  }
 /*section 3*/
 .section-3{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -911,6 +916,7 @@ header{
     color: #fff;
     font-weight: 500;
     font-size: 2em;
+    text-align: center;
 }
 
 .services-item p {
@@ -941,7 +947,7 @@ header{
     height: 50px;
   width: 100%;
   text-align: center;
-  font-family: Inter;
+    font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1026,7 +1032,7 @@ header{
         width: 100%;
         height: 50px;
         text-align: center;
-        font-family: Inter;
+    font-family: Roboto;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1040,7 +1046,7 @@ header{
 
 /*section 4 titre*/
 .section-4-titre{
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 10%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
