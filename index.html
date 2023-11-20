@@ -1,52 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style/big-counter.css">
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-    <title>AhVélo</title>
+    <title>Ahvelo</title>
 </head>
+
 <body>
-    <header>
-        <img src="img/logo_comite_velo_couleur.png" class="logo" alt="">
-        <div id="toggle">
-          
+
+    <main class="preloader">
+        <div class="loading-progress">
+            <h1 class="number-loading">100%</h1>
         </div>
-    </header>
-    <div class="hero">
-        <div class="header">
-            <h1>Ah velo</h1>
+        <div class="velo-animation">
+            <img src="/img/bikeAnimation.gif" class="bike-ani" alt="bike">
+            <div class="wind-line-container">
+                <div class="wind-line-1 line-animation"></div>
+                <div class="wind-line-2 line-animation"></div>
+                <div class="wind-line-3 line-animation"></div>
+                <div class="wind-line-4 line-animation"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="menu-open"></div>
+    <div class="menu-container">
+        <div class="content-overlay">
+            <div class="close-menu"><svg height="50px" id="Layer_1" style="enable-background:new 0 0 512 512;"
+                    version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" />
+                </svg></div>
+
+            <div class="menu-selection">
+                <div class="menu-section-container">
+                    <h2 class="number-menu">01</h2>
+                    <h2 class="selection"> <a href="">Accueil</a></h2>
+                </div>
+                <hr>
+            </div>
+
+            <div class="menu-selection">
+                <div class="menu-section-container">
+                    <h2 class="number-menu">02</h2>
+                    <h2 class="selection"><a href="page-video">Video Formation</a></h2>
+                </div>
+                <hr>
+            </div>
+            <div class="menu-selection">
+                <div class="menu-section-container">
+                    <h2 class="number-menu">03</h2>
+                    <h2 class="selection"><a
+                            href="https://booking.setmore.com/scheduleappointment/1bd91f39-c05e-4ce4-ba92-00472796040e">Réservation</a>
+                    </h2>
+                </div>
+                <hr>
+            </div>
+            <div class="menu-selection">
+                <div class="menu-section-container">
+                    <h2 class="number-menu">04</h2>
+                    <h2 class="selection"><a href="mailto:jappfiction@outlook.com">Contact</a></h2>
+                </div>
+                <hr>
+            </div>
+            <div>
+                <!--
+        <button>Fr</button>
+        <button>En</button>
+        -->
+            </div>
         </div>
     </div>
 
-    <div id="square-container"></div>
-    <div class="content-overlay">
-        <div class="nav-header">
-            <h1>work with us</h1>
+
+    <div class="container">
+        <header>
+            <img src="/img/logo_comite_velo_couleur.png" alt="" srcset="" class="logo">
+            <div id="toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+        </header>
+        <div class="section-1">
+            <div class="accueil">
+                <div class="accueil-info">
+                    <h1>Bienvenue</h1>
+                    <div class="ligne-bienvenue"></div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloribus sit, ratione
+                        autem quas quaerat et quisquam, numquam aspernatur culpa quasi a incidunt eos veniam ut possimus
+                        labore fuga consequatur?
+                        Voluptas quae reiciendis aliquam repellat beatae iste est ad ipsam error velit laborum commodi
+                        ducimus, adipisci impedit facere voluptate id dolores quas saepe eos nobis? Obcaecati odit
+                        voluptate neque ad.
+                    </p>
+
+                </div>
+                <!--
+            <div class="bike-container"><img src="img/image 4.png" alt="" class="bike-img"></div>
+            <div class="pump-container"><img src="img/image 5.png" alt="" class="pump-img"></div>
+            <div class="tool-container"><img src="img/image 3.png" alt="" class="tool-img"></div>
+            <div class="helmet-container"><img src="img/image 6.png" alt="" class="helmet-img"></div>
+            <div class="wheel-container"><img src="img/image 7.png" alt="" class="wheel-img"></div>
+            -->
+                <!-- <div class="bicycle-container">
+                <img src="img/bicycleImg.png" alt="" class="bicycle-img">
+
+            </div> -->
+                <div class="bicycle-container">
+                    <img src="img/7506468-removebg-preview.png" alt="" class="bicycle-img">
+
+                </div>
+                <div class="circle-background"></div>
+            </div>
+
+
+            <div class="scroll-container">
+
+                <div class="scroll-circle">
+                    <div class="circle"></div>
+                </div>
+                <p>scroll down</p>
+            </div>
         </div>
-        <div class="nav-link">
-            <span>01</span>
-            <a href="#">Home</a>
+        <div class="section-2-titre">
+            <h2>Nos valeurs et notre mission</h2>
         </div>
-        <div class="nav-link">
-            <span>01</span>
-            <a href="#">Home</a>
+        <div class="section-2">
+
+            <div class="middle-container">
+                <div class="container-card">
+                    <div class="card card-1">
+                        <h3>1. Ecologie</h3>
+                        <hr class="red-line">
+                        <p class="card-description">Lorem ipsum dolor sit amet. Aut quaerat iure eos itaque dignissimos
+                            in
+                            suscipit autem aut autem
+                            voluptas cum consequatur alias. Qui adipisci voluptates ut voluptas consequuntur ut mollitia
+                            consequatur!</p>
+                    </div>
+                    <div class="card card-2">
+                        <h3>2. Accessibilité</h3>
+                        <hr class="red-line">
+                        <p class="card-description">Lorem ipsum dolor sit amet. Aut quaerat iure eos itaque dignissimos
+                            in
+                            suscipit autem aut autem
+                            voluptas cum consequatur alias. Qui adipisci voluptates ut voluptas consequuntur ut mollitia
+                            consequatur!</p>
+                    </div>
+                    <div class="card card-3">
+                        <h3>3. Mission</h3>
+                        <hr class="red-line">
+                        <p class="card-description">Lorem ipsum dolor sit amet. Aut quaerat iure eos itaque dignissimos
+                            in
+                            suscipit autem aut autem
+                            voluptas cum consequatur alias. Qui adipisci voluptates ut voluptas consequuntur ut mollitia
+                            consequatur!</p>
+                    </div>
+
+                    <div class="circle-background-2"></div>
+
+
+                </div>
+
+                <div class="container-img">
+                    <img class="bike-gauche pin-section-2" src="img/bicycleImg-removebg-preview.png" alt="velo">
+                </div>
+
+
+
+            </div>
         </div>
-        <div class="nav-link">
-            <span>01</span>
-            <a href="#">Home</a>
+        <div class="section-3">
+
+            <div class="section-3-titre">
+                <h2>Services</h2>
+            </div>
+
+
+            <div class="services">
+
+                <div class="services-item">
+                    <div class="services-item-header">
+                        <img src="img/bike-icon.png" alt="">
+                        <h2>Reparations de velo</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet. Aut quaerat iure eos itaque dignissimos in suscipit autem aut autem
+                        voluptas cum consequatur alias. Qui adipisci voluptates ut voluptas consequuntur ut mollitia
+                        consequatur!</p>
+                    <a href="https://booking.setmore.com/scheduleappointment/1bd91f39-c05e-4ce4-ba92-00472796040e"><button
+                            class="services-button">Prendre un RDV</button></a>
+
+
+                </div>
+
+                <div class="services-item">
+                    <div class="services-item-header">
+                        <img src="img/vid-icon.png" alt="">
+                        <h2>Videos de formation</h2>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet. Aut quaerat iure eos itaque dignissimos in suscipit autem aut autem
+                        voluptas cum consequatur alias. Qui adipisci voluptates ut voluptas consequuntur ut mollitia
+                        consequatur!</p>
+
+                    <a href="https://booking.setmore.com/scheduleappointment/1bd91f39-c05e-4ce4-ba92-00472796040e"><button
+                            class="services-button">Voir les Videos</button></a>
+
+                </div>
+            </div>
         </div>
-        <div class="nav-link">
-            <span>01</span>
-            <a href="#">Home</a>
+        <div class="h2-joindre section-4-titre">
+            <h2 class="joindre">Où nous joindre ?</h2>
         </div>
-        
+        <div class="section-4">
+
+            <div class="footer-container">
+                <div class="upper-footer">
+                    <div id="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.9743011105!2d-73.64032071218234!3d45.550842510789636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918d94a05fb11%3A0xfbcde0a3f2be7f54!2sR%C3%A9sidence%20Du%20Coll%C3%A8ge%20Ahuntsic!5e0!3m2!1sen!2sca!4v1700234020019!5m2!1sen!2sca"
+                            width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="adresse-etc">
+                        <div class="infos">
+                            <h5>Adresse:</h5>
+                            <p>
+                                8755 Rue Saint-Hubert, Ahuntsic-Cartierville, Montréal, <br> Québec, Canada
+                            </p>
+                        </div>
+                        <div class="infos">
+                            <h5>Numero de telephone:</h5>
+                            <p>(514) 389-5921</p>
+                        </div>
+                        <div class="infos">
+                            <h5>Courriel:</h5>
+                            <p>infotest@collegeahuntsic.qc.ca</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-footer">
+                    <img class="footer-logo" src="/img/ahveloimgbw_3-removebg-preview.png" alt="logo" />
+                    <ul class="ul-nav-footer">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Réservation</a></li>
+                        <li><a href="#">Video</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="droit">Tous droits réservés 2023</div>
+            <div class="confection">
+                Confectionné avec passion par : <a href="https://jappfiction.com/">Jappfiction.com</a>
+            </div>
+        </div>
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="/script/menuAnimation.js"></script>
-   
-    
+
+
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/loadingWindAnimation.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/menuAnimation2.js"></script>
+
 </html>
