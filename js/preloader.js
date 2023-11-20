@@ -36,7 +36,7 @@ Pace.on('done', () => {
             document.querySelector(".container").style.display = "block"
 
 
-            if (window.location.pathname == '/index.html') {
+            if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
                 let introAnimtation = gsap.timeline()
                 introAnimtation.from(".accueil", 2, {
                     opacity: 0,
