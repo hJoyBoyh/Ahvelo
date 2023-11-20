@@ -981,7 +981,7 @@ header{
 .confection{
     margin-right: 2em;
 }
-.confection span{
+.confection a{
     color: red;
 }
 

@@ -66,7 +66,7 @@ ScrollTrigger.create({
     end: "100% 10%",
    
    // toggleActions:"play none none reverse",
-    markers:true,
+    markers:false,
     scrub:true,
    
     animation:section1Animtation,
@@ -172,7 +172,7 @@ function myFunction(x) {
             end: "100% 10%",
            
            // toggleActions:"play none none reverse",
-            markers:true,
+            markers:false,
             scrub:true,
            
             animation:section1Animtation,
@@ -207,7 +207,7 @@ ScrollTrigger.create({
     end: "250% 80%",
    
     toggleActions:"play none none reverse",
-    markers:true,
+    markers:false,
     pin: ".section-2",
     scrub:true,
    
