@@ -37,6 +37,13 @@ Pace.on('done', () =>{
     
         
 if(window.location.pathname == '/siteComplet/index.html'){
+    let introAnimtation = gsap.timeline()
+    introAnimtation.from(".accueil",2,{
+        opacity:0,
+        x:500
+    },("start"))
+  
+
 let section1Animtation = gsap.timeline()
 section1Animtation.add("start")
 
