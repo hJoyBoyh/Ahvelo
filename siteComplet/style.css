@@ -578,6 +578,9 @@ header{
      }
    
 }
+.section-2 {
+    padding-bottom: 15%;
+}
 /*section 2 titre*/
 .section-2-titre{
    padding-top: 20%;
@@ -596,6 +599,7 @@ header{
     h2 {
         font-size: 2em;
         margin: 0;
+        margin-top: 15%;
     }
     .section-2-titre{
         padding-top: 20%;
@@ -725,7 +729,6 @@ header{
 }
 /*section 3 titre*/
 .section-3-titre{
-    padding-top: 15%;
     padding-bottom: 15%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
