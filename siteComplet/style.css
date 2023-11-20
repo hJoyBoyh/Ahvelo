@@ -35,6 +35,18 @@ header{
     .logo {
       height: 80px;
     }
+    .circle-background{
+        height: 1100px;
+        width: 1000px;
+        background-color: #E41E1D;
+        position: absolute;
+        z-index: -1;
+        bottom: 0%;
+        left: 10%;
+        border-radius: 50%;
+        opacity: 0.9;
+        
+      }
   }
 
   /*section-1*/
@@ -48,6 +60,22 @@ header{
     left: 50%;
     border-radius: 50%;
     
+  }
+  @media screen and (max-width: 900px) {
+    
+    
+    .circle-background{
+        height: 1100px;
+        width: 1000px;
+        background-color: #E41E1D;
+        position: absolute;
+        z-index: -1;
+        bottom: 0%;
+        left: 70%;
+        border-radius: 50%;
+        opacity: 0.9;
+        
+      }
   }
   
 .section-1{
@@ -248,75 +276,6 @@ header{
     
     }
   }
-  /*section 1 grand*/
-  @media screen and (min-width: 1700px){
-    .circle-background{
-        height: 2000px;
-        width: 1900px;
-        background-color: #E41E1D;
-        position: absolute;
-        z-index: -1;
-        bottom: 10%;
-        left: 49%;
-        border-radius: 50%;
-        
-      }
-      .accueil-info>h1{
-        margin: 0;
-        font-size: 5em;
-    }
-    .accueil-info>p{
-        font-size: 2em;
-    }
-    .ligne-bienvenue{
-        height: 2px;
-        width: 200px;
-        background-color: #E41E1D;
-    }
-    
-
-
-
-
-      .bicycle-container{
-        width: 700px;
-        height: 600px;
-        margin-right: 1%;
-        position: relative;
-        bottom: 100px;
-        /*gsap*/
-        
-    }
-    .bicycle-img{
-        height: 100%;
-        width: 100%;
-    
-    }
-    .scroll-circle{
-        
-        left: 12%;
-        bottom: 60px;
-        
-    
-    
-    }
-
-    .scroll-container>p{
-        position: relative;
-        left: 13%;
-        bottom: 60px;
-        
-    }
-    .scroll-container{
-       width: 100vw;
-       display: flex;
-       justify-content: flex-start;
-       align-items: center;
-    }
-}
-    /*
-
-  }
 
 
 /*preloader*/
@@ -499,7 +458,7 @@ header{
 
 .close-menu{
     position: relative;
-   bottom:20%;
+   bottom:10%;
     left:75%;
     
  }
@@ -623,7 +582,7 @@ header{
 @media screen and (max-width:800px) {
     .close-menu{
         position: relative;
-       bottom:50%;
+       bottom:40%;
         left:40%;
         
      }
@@ -632,7 +591,7 @@ header{
 @media screen and (max-width:550px) {
     .close-menu{
         position: relative;
-       bottom:50%;
+       bottom:35%;
         left:20%;
         
      }
@@ -793,46 +752,10 @@ header{
        top: 1em;
     }
 }
-/*section 3 grand*/
-
-@media screen and (min-width: 1700px){
-    .circle-background-2{
-        height: 2500px;
-        width: 2400px;
-        background-color: #E41E1D;
-        position: absolute;
-        z-index: -100;
-        top:190%;
-        right:40%;
-        
-        border-radius: 50%;
-        
-      }
-      .card{
-        /* width: 30vw;*/
-        width: 600px;
-         height: 70vh;
-         border: 1px solid black;
-         padding: 5px;
-         text-align: center;
-         border-radius: 8px;
-         box-shadow: 6px 2px 2px rgb(66, 66, 66);
-         margin-bottom: 20%;
-         margin-top: 30%;
-         background-color: white;
-     }
-     .card>h3{
-        font-size: 3em;
-     }
-     .card-description{
-        font-size: 2em;
-     }
-
-}
 /*section 3 titre*/
 .section-3-titre{
-    margin-top: 20%;
-    padding-bottom: 15%;/*change le value pour plus petit*/
+    padding-top: 20%;
+    padding-bottom: 20%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
     height: 10vh;
@@ -868,7 +791,7 @@ header{
 .services-item-header {
     display: flex;
     align-items: center;
-     margin-right: 10px;
+        margin-right: 10px;
     justify-content: space-evenly;
     gap:5%
 }
@@ -977,39 +900,9 @@ header{
 
 }
 
-@media screen and (min-width:1700px) {
-    .services-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 500px;
-        height: 600px;
-        flex-shrink: 0;
-        padding: 15px;
-        border-radius: 30px;
-        background: rgba(229, 30, 28, 0.93);
-        opacity: 1;
-        margin: 50px;
-    }
-    .services-item-header h2 {
-        color: #fff;
-        font-weight: 500;
-        font-size: 2.5em;
-        text-align: center;
-    }
-    .services-item p {
-        color: #fff;
-        padding: 10px;
-        line-height: 1.5em;
-        font-size: 1.5rem;
-    }
-    
-
-}
-
 /*section 4 titre*/
 .section-4-titre{
-    padding-top:15%;
+    padding-top: 20%;
     padding-bottom: 10%;/*change le value pour plus petit*/
     text-align: center;
     width: 100vw;
