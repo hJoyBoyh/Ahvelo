@@ -954,6 +954,9 @@ header{
   .infos:first-child{
     height: 4em;
   }
+  .infos p{
+    color: white;
+  }
   .lower-footer{
     margin-top: 3em;
     display: flex;
